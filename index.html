@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- linking files -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+
+  <!-- importing font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="parent"> <!-- easier to center content -->
+    <div id="main-container">
+      <div id="selection-screen">
+        <div id="star-container"></div>
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        <div id="rating-div"> <!-- enables equal spacing and easier positioning -->
+          <button class="rating" id="button-1" onclick="selectRating(this.id)">1</button>
+          <button class="rating" id="button-2" onclick="selectRating(this.id)">2</button>
+          <button class="rating" id="button-3" onclick="selectRating(this.id)">3</button>
+          <button class="rating" id="button-4" onclick="selectRating(this.id)">4</button>
+          <button class="rating " id="button-5" onclick="selectRating(this.id)">5</button>
+        </div>
+        <button id="submit" onclick="submitResults()">SUBMIT</button>
+      </div>
+
+      <div id="thank-you-screen">
+        <img src="./images/illustration-thank-you.svg" alt="Thank you picture">
+        <div id="selection-result"></div>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        CHALLENGE BY <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">FRONTEND MENTOR</a>.
+        CODED BY <a href="https://www.frontendmentor.io/profile/SushiOnToast">SUSHIONTOAST</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

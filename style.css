@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Overpass", sans-serif;;
+}
+
+#parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    max-width: 360px;
+    min-height: 360px;
+    background-image: linear-gradient(#252d37, #181b1f);
+    margin: 25px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#star-container, .rating {
+    width: 45px;
+    height: 45px;
+    background-color: #2a333b;
+    border-radius: 50%;
+
+}
+
+.rating, #submit, h2 {
+    font-weight: 700;
+}
+
+#star-container {
+    background-image: url('./images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+#rating-div {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    transition-duration: 0.4s;
+}
+
+.rating {
+    margin-top: 25px;
+    border: none;
+    color: #959eac;
+    margin-left: 5px;
+}
+
+.selected {
+    background-color: #ffffff;
+    color: #121417;
+}
+
+#button-1 {
+    margin-left: 0px;
+}
+
+#submit {
+    width: 100%;
+    border-radius: 30px;
+    height: 45px;
+    letter-spacing: 5px;
+    background-color: #fb7413;
+    border: none;
+    color: #121417;
+    margin-top: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #121417;
+}
+
+.rating:hover {
+    background-color: #fb7413;
+}
+
+#submit:hover {
+    background-color: #ffffff;
+}
+
+
+h2,
+p {
+    color: white;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #959eac;
+    line-height: 20px;
+}
+
+/* Thank you screen */
+#thank-you-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 125px;
+    margin-top: 20px;
+}
+
+#selection-result {
+    background-color: #2a333b;
+    color: #fb7413;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+#selection-result>p {
+    margin: 0px;
+}
+
+#thank-you-screen h2 {
+    margin-top: 35px;
+}
+
+#thank-you-screen>p {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #959eac;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+a:visited {
+    color: #abb4c4;
+}
+
+a:hover {
+    color: #fb7413;
+}
