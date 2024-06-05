@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Available on github pages](#)
+- Solution URL: [Available on github pages](https://sushiontoast.github.io/frontend-mentor-rating-component/)
 
 ## More information
 
